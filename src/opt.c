@@ -24,7 +24,7 @@ float line_search(int n /* dimension of x */,
     alpha = 1e-2;
     alpha1 = 0;
     alpha2 = infinity;
-    va_start(args, count);
+    va_start(args, fg);
     while (true)
     {
         if (!strcmp("end", va_arg(args, char *)))
